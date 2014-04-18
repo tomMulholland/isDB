@@ -1,0 +1,6 @@
+createdb isDB
+
+Start by modifying the env.sh file with your database name:
+export DBNAME=isDB
+
+Load both data sets
