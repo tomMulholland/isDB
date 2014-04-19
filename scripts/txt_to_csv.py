@@ -22,6 +22,14 @@ for filename in filenames:
     file_in = open("scholarships/" + filename, 'r')
     lines = file_in.readlines()
     file_in.close()
+    
+    for i in range(lines.count("\n")):
+        lines.remove("\n")
+        
+    for i in range(len(lines)):
+        lines[i] = lines[i].replace("\n", "")
+        if (i%2 == 0):
+            lines[i] += "."
 
     writer.writerow([filename] + \
                     [' '.join(lines)])      
