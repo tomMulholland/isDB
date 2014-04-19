@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+psql -c "TRUNCATE schol_sentences CASCADE;" isDB
+psql -c "TRUNCATE web_sentences CASCADE;" isDB

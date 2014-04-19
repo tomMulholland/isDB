@@ -1,6 +1,70 @@
 createdb isDB
 
-Start by modifying the env.sh file with your database name:
-export DBNAME=isDB
+#Modify the env.sh file with your database name:
+#export DBNAME=isDB
 
-Load both data sets
+#Load both data sets
+psql -d isDB -c "CREATE TABLE scholarships( id bigserial primary key, text text);"
+psql -d isDB -c "CREATE TABLE websites( id bigserial primary key, text text);"
+
+psql -d isDB -c "copy scholarships from STDIN CSV;" < data/scholarships.csv
+psql -d isDB -c "copy websites from STDIN CSV;" < data/link_to.csv
+
+cd deepdive/app/isDB/udf/nlp_extractor
+sbt stage
+
+psql -d isDB -c "CREATE TABLE schol_sentences(
+  id bigserial primary key, 
+  document_id bigint,
+  sentence text, 
+  words text[],
+  lemma text[],
+  pos_tags text[],
+  dependencies text[],
+  ner_tags text[]);"
+
+psql -d isDB -c "CREATE TABLE web_sentences(
+  id bigserial primary key,
+  document_id bigint,
+  sentence text, 
+  words text[],
+  lemma text[],
+  pos_tags text[],
+  dependencies text[],
+  ner_tags text[]);"
+
+#in application.conf
+        ext_sentences.input: """SELECT id as "schol_id", text as "schol_text" FROM scholarships order by id asc"""
+    ext_sentences.output_relation: "schol_sentences"
+    ext_sentences.udf: ${APP_HOME}"/udf/nlp_extractor/run.sh -k schol_id -v schol_text -l 20"
+    ext_sentences.before: ${APP_HOME}"/udf/before_schol_sentences.sh"
+
+    ext_sentences.input: """SELECT id as "web_id", text as "web_text" FROM websites order by id asc"""
+    ext_sentences.output_relation: "web_sentences"
+    ext_sentences.udf: ${APP_HOME}"/udf/nlp_extractor/run.sh -k web_id -v web_text -l 20"
+    ext_sentences.before: ${APP_HOME}"/udf/before_web_sentences.sh"
+
+
+#in before_sentences.sh
+#! /usr/bin/env bash
+psql -c "TRUNCATE schol_sentences CASCADE;" isDB
+psql -c "TRUNCATE web_sentences CASCADE;" isDB
+
+
+
+
+# Parsing of schol_text:
+[success] Total time: 5408 s, completed Apr 18, 2014 7:56:20 PM
+#Parsing of web_text:
+takes ~10 minutes
+#schol_text sentence table = 10MB
+#web_text sentence table = 16 MB
+#What??
+
+# Haven't tested this
+ALTER TABLE web_sentences ADD COLUMN id_orig numeric;
+UPDATE TABLE web_sentences SET id_orig = (SELECT websites.id_orig
+  FROM websites, web_sentences
+  WHERE websites.id = web_sentences.id);
+
+eligible apply conditions semester visa J-1 J1 F-1 F1 admit accept
