@@ -1,0 +1,266 @@
+{"text_id": 9992247, "feature": "award=1"}
+{"text_id": 9992247, "feature": "foundat=15"}
+{"text_id": 9992247, "feature": "countri=2"}
+{"text_id": 9992247, "feature": "intern=2"}
+{"text_id": 9992247, "feature": "institut=2"}
+{"text_id": 9992247, "feature": "organ=2"}
+{"text_id": 9992247, "feature": "grant=1"}
+{"text_id": 9992247, "feature": "fellowship=1"}
+{"text_id": 9992247, "feature": "program=4"}
+{"text_id": 9992247, "feature": "condit=2"}
+{"text_id": 9992247, "feature": "studi=2"}
+{"text_id": 9992247, "feature": "total_dict_occur=34"}
+{"text_id": 9992247, "feature": "- 60 Years The Asia Foundation is a nonprofit international development"}
+{"text_id": 9992247, "feature": "Foundation is a nonprofit international development"}
+{"text_id": 9992247, "feature": "- 60 Years The Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Asia Foundation is a nonprofit international development organization committed to improving"}
+{"text_id": 9992247, "feature": "international development organization committed to improving"}
+{"text_id": 9992247, "feature": "Asia Foundation is a nonprofit international"}
+{"text_id": 9992247, "feature": "first_name_before_intern=True"}
+{"text_id": 9992247, "feature": "is a nonprofit international development organization committed to improving lives across"}
+{"text_id": 9992247, "feature": "organization committed to improving lives across"}
+{"text_id": 9992247, "feature": "is a nonprofit international development organization"}
+{"text_id": 9992247, "feature": "and thriving Asia Ratings and awards received by The?Asia?Foundation Governance and"}
+{"text_id": 9992247, "feature": "awards received by The?Asia?Foundation Governance and"}
+{"text_id": 9992247, "feature": "and thriving Asia Ratings and awards"}
+{"text_id": 9992247, "feature": "first_name_before_award=True"}
+{"text_id": 9992247, "feature": "and Justice Conflict and Fragile Conditions Books for Asia Development and"}
+{"text_id": 9992247, "feature": "Conditions Books for Asia Development and"}
+{"text_id": 9992247, "feature": "and Justice Conflict and Fragile Conditions"}
+{"text_id": 9992247, "feature": "in Asia, we serve 22 countries and territories. Online press kit,"}
+{"text_id": 9992247, "feature": "countries and territories. Online press kit,"}
+{"text_id": 9992247, "feature": "in Asia, we serve 22 countries"}
+{"text_id": 9992247, "feature": "Practices Najla Ayubi Joins U.S. Institute of Peace to Discuss First"}
+{"text_id": 9992247, "feature": "Institute of Peace to Discuss First"}
+{"text_id": 9992247, "feature": "Practices Najla Ayubi Joins U.S. Institute"}
+{"text_id": 9992247, "feature": "Afghanistan 2014 Australasian Aid and International Development Policy Workshop Asia Foundation"}
+{"text_id": 9992247, "feature": "International Development Policy Workshop Asia Foundation"}
+{"text_id": 9992247, "feature": "Afghanistan 2014 Australasian Aid and International"}
+{"text_id": 9992247, "feature": "International Development Policy Workshop Asia Foundation Development Fellows in the Philippines,"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows in the Philippines,"}
+{"text_id": 9992247, "feature": "International Development Policy Workshop Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "of April 8, The Asia Foundation hosted the inaugural class in"}
+{"text_id": 9992247, "feature": "Foundation hosted the inaugural class in"}
+{"text_id": 9992247, "feature": "of April 8, The Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "on Filipino Households Inaugural Asia Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "on Filipino Households Inaugural Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "work. Our inventory of Asia Foundation projects, programs, and grants on"}
+{"text_id": 9992247, "feature": "Foundation projects, programs, and grants on"}
+{"text_id": 9992247, "feature": "work. Our inventory of Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Asia Foundation projects, programs, and grants on the ground in Asia"}
+{"text_id": 9992247, "feature": "grants on the ground in Asia"}
+{"text_id": 9992247, "feature": "Asia Foundation projects, programs, and grants"}
+{"text_id": 9992247, "feature": "first_name_before_grant=True"}
+{"text_id": 9992247, "feature": "The Asia Foundation, Developmental Leadership Program and Australian Aid published Room"}
+{"text_id": 9992247, "feature": "Program and Australian Aid published Room"}
+{"text_id": 9992247, "feature": "The Asia Foundation, Developmental Leadership Program"}
+{"text_id": 9992247, "feature": "first_name_before_program=True"}
+{"text_id": 9992247, "feature": "and Nepal 2013 This regional study commissioned by The Asia Foundation"}
+{"text_id": 9992247, "feature": "study commissioned by The Asia Foundation"}
+{"text_id": 9992247, "feature": "and Nepal 2013 This regional study"}
+{"text_id": 9992247, "feature": "study commissioned by The Asia Foundation entitled \"Labour Migration: Trends and"}
+{"text_id": 9992247, "feature": "Foundation entitled \"Labour Migration: Trends and"}
+{"text_id": 9992247, "feature": "study commissioned by The Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "reports published by The Asia Foundation since 1999 that document impunity"}
+{"text_id": 9992247, "feature": "Foundation since 1999 that document impunity"}
+{"text_id": 9992247, "feature": "reports published by The Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "\n (Part of the... Asia Foundation Development Fellows Connect with Development"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Connect with Development"}
+{"text_id": 9992247, "feature": "\n (Part of the... Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Officials in the Philippines Asia Foundation Development Fellows Connect with Development"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Connect with Development"}
+{"text_id": 9992247, "feature": "Officials in the Philippines Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Officials in the Philippines Asia Foundation Development Fellows Program Welcomes Emerging"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Program Welcomes Emerging"}
+{"text_id": 9992247, "feature": "Officials in the Philippines Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Philippines Asia Foundation Development Fellows Program Welcomes Emerging Leaders at Singapore"}
+{"text_id": 9992247, "feature": "Program Welcomes Emerging Leaders at Singapore"}
+{"text_id": 9992247, "feature": "Philippines Asia Foundation Development Fellows Program"}
+{"text_id": 9992247, "feature": "first_name_before_program=True"}
+{"text_id": 9992247, "feature": "Leaders at Singapore Reception Asia Foundation Development Fellows Program Welcomes Emerging"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Program Welcomes Emerging"}
+{"text_id": 9992247, "feature": "Leaders at Singapore Reception Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Reception Asia Foundation Development Fellows Program Welcomes Emerging Leaders at Singapore"}
+{"text_id": 9992247, "feature": "Program Welcomes Emerging Leaders at Singapore"}
+{"text_id": 9992247, "feature": "Reception Asia Foundation Development Fellows Program"}
+{"text_id": 9992247, "feature": "first_name_before_program=True"}
+{"text_id": 9992247, "feature": "at Singapore Reception Inaugural Asia Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "at Singapore Reception Inaugural Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "in Singapore, Philippines Inaugural Asia Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows Kick off Year"}
+{"text_id": 9992247, "feature": "in Singapore, Philippines Inaugural Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "reports and publications on Asia Foundation Development Fellows. Read our reports"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows. Read our reports"}
+{"text_id": 9992247, "feature": "reports and publications on Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "reports and publications on Asia Foundation Development Fellows. The online application"}
+{"text_id": 9992247, "feature": "Foundation Development Fellows. The online application"}
+{"text_id": 9992247, "feature": "reports and publications on Asia Foundation"}
+{"text_id": 9992247, "feature": "first_name_before_foundat=True"}
+{"text_id": 9992247, "feature": "Application period for the following fellowship year begins in the fall."}
+{"text_id": 9992247, "feature": "fellowship year begins in the fall."}
+{"text_id": 9992247, "feature": "Application period for the following fellowship"}
+{"text_id": 9992247, "feature": "for General Affairs at the Institute for Legislative  Studies (ILS)"}
+{"text_id": 9992247, "feature": "Institute for Legislative  Studies (ILS)"}
+{"text_id": 9992247, "feature": "for General Affairs at the Institute"}
+{"text_id": 9992247, "feature": "the Institute for Legislative  Studies (ILS) of the National Assembly"}
+{"text_id": 9992247, "feature": "Studies (ILS) of the National Assembly"}
+{"text_id": 9992247, "feature": "the Institute for Legislative  Studies"}
+{"text_id": 9992247, "feature": "Kholifah, 38, is  Indonesia Country Director for the Asian Muslim"}
+{"text_id": 9992247, "feature": "Country Director for the Asian Muslim"}
+{"text_id": 9992247, "feature": "Kholifah, 38, is  Indonesia Country"}
+{"text_id": 9992247, "feature": "Co-founder and Director of  Programs and Communications at the Greenovation"}
+{"text_id": 9992247, "feature": "Programs and Communications at the Greenovation"}
+{"text_id": 9992247, "feature": "Co-founder and Director of  Programs"}
+{"text_id": 9992247, "feature": "the Philippines, the  umbrella organization of the local government leagues"}
+{"text_id": 9992247, "feature": "organization of the local government leagues"}
+{"text_id": 9992247, "feature": "the Philippines, the  umbrella organization"}
+{"text_id": 9992247, "feature": "and Justice Conflict and Fragile Conditions Books for Asia Development and"}
+{"text_id": 9992247, "feature": "Conditions Books for Asia Development and"}
+{"text_id": 9992247, "feature": "and Justice Conflict and Fragile Conditions"}
+{"text_id": 9991726, "feature": "award=2"}
+{"text_id": 9991726, "feature": "appli=2"}
+{"text_id": 9991726, "feature": "program=5"}
+{"text_id": 9991726, "feature": "graduat=1"}
+{"text_id": 9991726, "feature": "univers=6"}
+{"text_id": 9991726, "feature": "studi=5"}
+{"text_id": 9991726, "feature": "master=7"}
+{"text_id": 9991726, "feature": "condit=1"}
+{"text_id": 9991726, "feature": "scholarship=11"}
+{"text_id": 9991726, "feature": "total_dict_occur=40"}
+{"text_id": 9991726, "feature": "    The University of Queensland\n \n  "}
+{"text_id": 9991726, "feature": "University of Queensland\n \n  "}
+{"text_id": 9991726, "feature": "    The University"}
+{"text_id": 9991726, "feature": "    The University of Western Australia\n \n "}
+{"text_id": 9991726, "feature": "University of Western Australia\n \n "}
+{"text_id": 9991726, "feature": "    The University"}
+{"text_id": 9991726, "feature": "     University research centres\n \n  "}
+{"text_id": 9991726, "feature": "University research centres\n \n  "}
+{"text_id": 9991726, "feature": "     University"}
+{"text_id": 9991726, "feature": "    Why study with us\n \n  "}
+{"text_id": 9991726, "feature": "study with us\n \n  "}
+{"text_id": 9991726, "feature": "    Why study"}
+{"text_id": 9991726, "feature": "     Master of Integrated Water Management\n \n"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management\n \n"}
+{"text_id": 9991726, "feature": "     Master"}
+{"text_id": 9991726, "feature": "     Study in Brisbane\n \n  "}
+{"text_id": 9991726, "feature": "Study in Brisbane\n \n  "}
+{"text_id": 9991726, "feature": "     Study"}
+{"text_id": 9991726, "feature": "    Australia Awards Scholarships and Endeavour Scholarships\n \n"}
+{"text_id": 9991726, "feature": "Awards Scholarships and Endeavour Scholarships\n \n"}
+{"text_id": 9991726, "feature": "    Australia Awards"}
+{"text_id": 9991726, "feature": "   Australia Awards Scholarships and Endeavour Scholarships\n \n "}
+{"text_id": 9991726, "feature": "Scholarships and Endeavour Scholarships\n \n "}
+{"text_id": 9991726, "feature": "   Australia Awards Scholarships"}
+{"text_id": 9991726, "feature": "    Why study with us Master of Integrated"}
+{"text_id": 9991726, "feature": "study with us Master of Integrated"}
+{"text_id": 9991726, "feature": "    Why study"}
+{"text_id": 9991726, "feature": " Why study with us Master of Integrated Water Management Content"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management Content"}
+{"text_id": 9991726, "feature": " Why study with us Master"}
+{"text_id": 9991726, "feature": "Management Content and structure Australia Awards Scholarships and Endeavour Scholarships Other"}
+{"text_id": 9991726, "feature": "Awards Scholarships and Endeavour Scholarships Other"}
+{"text_id": 9991726, "feature": "Management Content and structure Australia Awards"}
+{"text_id": 9991726, "feature": "Content and structure Australia Awards Scholarships and Endeavour Scholarships Other financial"}
+{"text_id": 9991726, "feature": "Scholarships and Endeavour Scholarships Other financial"}
+{"text_id": 9991726, "feature": "Content and structure Australia Awards Scholarships"}
+{"text_id": 9991726, "feature": "Australia Awards Scholarships and Endeavour Scholarships Other financial aid  Master"}
+{"text_id": 9991726, "feature": "Scholarships Other financial aid  Master"}
+{"text_id": 9991726, "feature": "Australia Awards Scholarships and Endeavour Scholarships"}
+{"text_id": 9991726, "feature": "Scholarships Other financial aid  Master of Integrated Water Management Please"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management Please"}
+{"text_id": 9991726, "feature": "Scholarships Other financial aid  Master"}
+{"text_id": 9991726, "feature": "May 2014 for the next scholarships round. Master of Integrated Water"}
+{"text_id": 9991726, "feature": "scholarships round. Master of Integrated Water"}
+{"text_id": 9991726, "feature": "May 2014 for the next scholarships"}
+{"text_id": 9991726, "feature": "first_name_before_scholarship=True"}
+{"text_id": 9991726, "feature": "for the next scholarships round. Master of Integrated Water Management Note:"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management Note:"}
+{"text_id": 9991726, "feature": "for the next scholarships round. Master"}
+{"text_id": 9991726, "feature": "Integrated Water Management Note: the scholarship does not include travel, accommodation,"}
+{"text_id": 9991726, "feature": "scholarship does not include travel, accommodation,"}
+{"text_id": 9991726, "feature": "Integrated Water Management Note: the scholarship"}
+{"text_id": 9991726, "feature": "\n successful recipients. * Part-time/distance study option is available only to"}
+{"text_id": 9991726, "feature": "study option is available only to"}
+{"text_id": 9991726, "feature": "\n successful recipients. * Part-time/distance study"}
+{"text_id": 9991726, "feature": "citizens and Australian permanent residents. Master of Integrated Water Management (MIWM)"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management (MIWM)"}
+{"text_id": 9991726, "feature": "citizens and Australian permanent residents. Master"}
+{"text_id": 9991726, "feature": "(MIWM) Please note that the scholarship is only available to study"}
+{"text_id": 9991726, "feature": "scholarship is only available to study"}
+{"text_id": 9991726, "feature": "(MIWM) Please note that the scholarship"}
+{"text_id": 9991726, "feature": "scholarship is only available to study the IWC \n \n Master"}
+{"text_id": 9991726, "feature": "study the IWC \n \n Master"}
+{"text_id": 9991726, "feature": "scholarship is only available to study"}
+{"text_id": 9991726, "feature": "study the IWC \n \n Master of Integrated Water Management. It"}
+{"text_id": 9991726, "feature": "Master of Integrated Water Management. It"}
+{"text_id": 9991726, "feature": "study the IWC \n \n Master"}
+{"text_id": 9991726, "feature": "for the IWC \n \n Graduate Diploma/Certificate programs or for any?other"}
+{"text_id": 9991726, "feature": "Graduate Diploma/Certificate programs or for any?other"}
+{"text_id": 9991726, "feature": "for the IWC \n \n Graduate"}
+{"text_id": 9991726, "feature": "IWC \n \n Graduate Diploma/Certificate programs or for any?other program offered"}
+{"text_id": 9991726, "feature": "programs or for any?other program offered"}
+{"text_id": 9991726, "feature": "IWC \n \n Graduate Diploma/Certificate programs"}
+{"text_id": 9991726, "feature": "Diploma/Certificate programs or for any?other program offered \n \n by IWC,"}
+{"text_id": 9991726, "feature": "program offered \n \n by IWC,"}
+{"text_id": 9991726, "feature": "Diploma/Certificate programs or for any?other program"}
+{"text_id": 9991726, "feature": "\n \n by IWC, partner universities or other institutions. apply for"}
+{"text_id": 9991726, "feature": "universities or other institutions. apply for"}
+{"text_id": 9991726, "feature": "\n \n by IWC, partner universities"}
+{"text_id": 9991726, "feature": "partner universities or other institutions. apply for the MIWM program through"}
+{"text_id": 9991726, "feature": "apply for the MIWM program through"}
+{"text_id": 9991726, "feature": "partner universities or other institutions. apply"}
+{"text_id": 9991726, "feature": "institutions. apply for the MIWM program through The University of Queensland"}
+{"text_id": 9991726, "feature": "program through The University of Queensland"}
+{"text_id": 9991726, "feature": "institutions. apply for the MIWM program"}
+{"text_id": 9991726, "feature": "the MIWM program through The University of Queensland The University of"}
+{"text_id": 9991726, "feature": "University of Queensland The University of"}
+{"text_id": 9991726, "feature": "the MIWM program through The University"}
+{"text_id": 9991726, "feature": "The University of Queensland The University of Queensland Typically, successful scholarship"}
+{"text_id": 9991726, "feature": "University of Queensland Typically, successful scholarship"}
+{"text_id": 9991726, "feature": "The University of Queensland The University"}
+{"text_id": 9991726, "feature": "University of Queensland Typically, successful scholarship candidates possess an \n \n"}
+{"text_id": 9991726, "feature": "scholarship candidates possess an \n \n"}
+{"text_id": 9991726, "feature": "University of Queensland Typically, successful scholarship"}
+{"text_id": 9991726, "feature": "\n \n criteria when assessing scholarship applications: IWC Masters Scholarships Terms"}
+{"text_id": 9991726, "feature": "scholarship applications: IWC Masters Scholarships Terms"}
+{"text_id": 9991726, "feature": "\n \n criteria when assessing scholarship"}
+{"text_id": 9991726, "feature": "when assessing scholarship applications: IWC Masters Scholarships Terms and Conditions Scholarship"}
+{"text_id": 9991726, "feature": "Masters Scholarships Terms and Conditions Scholarship"}
+{"text_id": 9991726, "feature": "when assessing scholarship applications: IWC Masters"}
+{"text_id": 9991726, "feature": "assessing scholarship applications: IWC Masters Scholarships Terms and Conditions Scholarship selection"}
+{"text_id": 9991726, "feature": "Scholarships Terms and Conditions Scholarship selection"}
+{"text_id": 9991726, "feature": "assessing scholarship applications: IWC Masters Scholarships"}
+{"text_id": 9991726, "feature": "IWC Masters Scholarships Terms and Conditions Scholarship selection outcomes Questions regarding"}
+{"text_id": 9991726, "feature": "Conditions Scholarship selection outcomes Questions regarding"}
+{"text_id": 9991726, "feature": "IWC Masters Scholarships Terms and Conditions"}
+{"text_id": 9991726, "feature": "Masters Scholarships Terms and Conditions Scholarship selection outcomes Questions regarding scholarships"}
+{"text_id": 9991726, "feature": "Scholarship selection outcomes Questions regarding scholarships"}
+{"text_id": 9991726, "feature": "Masters Scholarships Terms and Conditions Scholarship"}
+{"text_id": 9991726, "feature": "Scholarship selection outcomes Questions regarding scholarships or program content: Questions regarding"}
+{"text_id": 9991726, "feature": "scholarships or program content: Questions regarding"}
+{"text_id": 9991726, "feature": "Scholarship selection outcomes Questions regarding scholarships"}
+{"text_id": 9991726, "feature": "outcomes Questions regarding scholarships or program content: Questions regarding program admissions:"}
+{"text_id": 9991726, "feature": "program content: Questions regarding program admissions:"}
+{"text_id": 9991726, "feature": "outcomes Questions regarding scholarships or program"}
+{"text_id": 9991726, "feature": "or program content: Questions regarding program admissions: Add to Skype You'll"}
+{"text_id": 9991726, "feature": "program admissions: Add to Skype You'll"}
+{"text_id": 9991726, "feature": "or program content: Questions regarding program"}
+{"text_id": 9991726, "feature": "Skype Credit Free via Skype Apply now > Antigua and Barbuda"}
+{"text_id": 9991726, "feature": "Apply now > Antigua and Barbuda"}
+{"text_id": 9991726, "feature": "Skype Credit Free via Skype Apply"}
