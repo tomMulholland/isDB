@@ -5,24 +5,31 @@ PROJECT WORK FLOW
 #######################
 # WORK PLAN
 
-1. DO NOT (Perform natural language processing on raw text)
-   Perform natural language processing on raw text
+1. Get positive examples (done), unknown examples (done), and negative examples (not done)
 
-2. Extract mentions of schol_dict words
-   (Extract mentions of people in the text)
+2. Create table with all id, all text, and is_scholarship(boolean)
 
-3. 
-   (Extract all pairs of people that possibly participate in a has_spouse relation)
+3. Label known scholarships as true, negative examples as false
 
-4. Add features to is_scholarship to predict which texts are scholarships
-   (Add features to our has_spouse candidates to predict which ones are correct or incorrect)
+3. Add features to schol_features:
+   - Number of mentions of each word in schol_dict words
+   - Number of total mentions of schol_dict words
+     
+4. Add features to schol_text_features
+   - three words before and after
+   - three words before
+   - three words after
+   - three words before contains person name?
 
-5. Use existing scholarships to provide positive examples of feature metadata
-   (Write inference rules to incorporate domain knowledge that improves our predictions)
+4. Write default inference rule (features used to predict is_scholarship)
 
-6. Add features to is_scholarship_requirement to predict which sentences contain relevant data
+5. Other inference rules?
 
-7. Use existing scholarships to provide positive examples of requirement feature metadata
+6. Adjust learning rate?
+
+7. Add features to is_scholarship_requirement to predict which sentences contain relevant requirement data
+
+8. Use existing scholarships to provide positive examples of requirement feature metadata
 
 # TODO
 ## Get more negative examples. Consider financial aid pages from universities
@@ -30,7 +37,7 @@ PROJECT WORK FLOW
 
 #######################
 # SCHOLARSHIP DICTIONARY
-
+## This dictionary has grown and is available in scripts/scholarship_words.txt
 eligible, requirement, apply, conditions, semester, quarter, visa, J-1, J1, F-1, F1, admit, accept, award, scholarship, college, university, foundation, international, country, student, graduate, MSc, M.Sc., PhD, Ph.D., deadline
 TOEFL, PBT, CBT, IBT, IELTS
 SAT, GRE, PSAT, AP, 
@@ -48,16 +55,26 @@ createdb isDB
 #Modify the env.sh file with your database name:
 #export DBNAME=isDB
 
-#Load both data sets
+# To reset isDB
+psql -d isDB -c "DROP SCHEMA public CASCADE;"
+psql -d isDB -c "CREATE SCHEMA public;"
+
+# Load both data sets
 psql -d isDB -c "CREATE TABLE scholarships( id bigserial primary key, text text);"
 psql -d isDB -c "CREATE TABLE websites( id bigserial primary key, text text);"
 
-psql -d isDB -c "copy scholarships from STDIN CSV;" < data/scholarships.csv
-psql -d isDB -c "copy websites from STDIN CSV;" < data/link_to.csv
+psql -d isDB -c "COPY scholarships FROM STDIN CSV;" < data/scholarships.csv
+psql -d isDB -c "COPY websites FROM STDIN CSV;" < data/link_to.csv
+
+psql -d isDB -c "ALTER TABLE scholarships ADD is_scholarship boolean"
+psql -d isDB -c "UPDATE scholarships SET is_scholarship = TRUE"
+psql -d isDB -c "ALTER TABLE websites ADD is_scholarship boolean"
+psql -d isDB -c "INSERT INTO scholarships SELECT * FROM websites;" 
 
 
 #####################
 # COMPILE NATURAL LANGUAGE PROCESSOR
+## Not using this
 cd deepdive/app/isDB/udf/nlp_extractor
 sbt stage
 
@@ -67,7 +84,7 @@ sbt stage
 #########################################
 # NO NATURAL LANGUAGE PROCESSING
 ## NLP did very badly on these texts at recognizing "ORGANIZATION"
-### GO TO NEXT SECTION
+# SKIP THIS SECTION
 psql -d isDB -c "CREATE TABLE schol_sentences(
   id bigserial primary key, 
   document_id bigint,
@@ -125,31 +142,38 @@ psql -d isDB -c "\COPY web_sentences to '/home/tom/deepdive/app/isDB/data/web_se
 
 
 ####################################
-## EXTRACT MENTIONS OF SCHOLARSHIP WORDS
+## EXTRACT FEATURES FROM SCHOLARSHIP WORDS
 
-psql -d isDB -c "CREATE TABLE schol_mentions(
+psql -d isDB -c "CREATE TABLE schol_features(
   id bigserial primary key, 
-  sentence_id bigint references schol_sentences(id),
-  start_position int,
-  length int,
-  text text);"
-
-psql -d isDB -c "CREATE TABLE web_mentions(
-  id bigserial primary key, 
-  sentence_id bigint references web_sentences(id),
-  start_position int,
-  length int,
-  text text);"
-
-    ext_schol.input: "SELECT * FROM web_sentences"
-    ext_schol.output_relation: "web_mentions"
-    ext_schol.udf: ${APP_HOME}"/scripts/get_json_from_deepdive.py"
-    ext_schol.before: ${APP_HOME}"/udf/before_web.sh"
-    ext_schol.dependencies: ["ext_sentences"]
+  text_id bigint references scholarships(id),
+  feature text);"
 
 
+    ext_schol.input: "SELECT * FROM scholarships"
+    ext_schol.output_relation: "schol_features"
+    ext_schol.udf: ${APP_HOME}"/scripts/extract_dictionary_mentions.py"
+    ext_schol.before: ${APP_HOME}"/udf/before_schol_features.sh"
 
+#before_schol_features.sh
+#! /usr/bin/env bash
+psql -c "TRUNCATE schol_features CASCADE;" isDB
 
+##########################################
+## WEIRD PROBLEM
+Deepdive doesn't like it when I include parallel python (pp) workers in extract_dictionary_mentions.py, but text processing would be much better parallelized.
+
+###########################################
+## INFERENCE FACTORS
+
+inference.factors {
+  f_is_schol_features.input_query: """
+    SELECT scholarships.id as "scholarships.id", scholarships.is_scholarship, feature 
+    FROM scholarships, schol_features
+    WHERE scholarships.id = schol_features.text_id"""
+  f_is_schol_features.function: "IsTrue(scholarships.is_scholarship)"
+  f_is_schol_features.weight: "?(feature)"
+}
 
 
 ## Haven't tested this
