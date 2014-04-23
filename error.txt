@@ -1,0 +1,48 @@
+20:58:22.893 [Thread-23][sampler][Sampler] INFO  20:58:22.893 [main] DEBUG org.dennybritz.sampler.Learner - iteration=0 learning_rate=0.001
+Exception in thread "main" scala.collection.parallel.CompositeThrowable: Multiple exceptions thrown during a parallel computation: java.lang.UnsupportedOperationException: empty.reduceLeft
+scala.collection.LinearSeqOptimized$class.reduceLeft(LinearSeqOptimized.scala:124)
+scala.collection.immutable.List.reduceLeft(List.scala:84)
+scala.collection.TraversableOnce$class.reduce(TraversableOnce.scala:195)
+scala.collection.AbstractTraversable.reduce(Traversable.scala:105)
+org.dennybritz.sampler.SamplingUtils$.sampleVariable(SamplingUtils.scala:34)
+org.dennybritz.sampler.SamplingUtils$$anonfun$sampleVariables$1.apply$mcVI$sp(SamplingUtils.scala:42)
+org.dennybritz.sampler.SamplingUtils$$anonfun$sampleVariables$1.apply(SamplingUtils.scala:42)
+org.dennybritz.sampler.SamplingUtils$$anonfun$sampleVariables$1.apply(SamplingUtils.scala:42)
+scala.collection.Iterator$class.foreach(Iterator.scala:727)
+scala.collection.parallel.immutable.ParHashSet$ParHashSetIterator.foreach(ParHashSet.scala:76)
+.
+.
+.
+	at scala.collection.parallel.package$$anon$1.alongWith(package.scala:85)
+	at scala.collection.parallel.Task$class.mergeThrowables(Tasks.scala:86)
+	at scala.collection.parallel.ParIterableLike$Foreach.mergeThrowables(ParIterableLike.scala:972)
+	at scala.collection.parallel.Task$class.tryMerge(Tasks.scala:72)
+	at scala.collection.parallel.ParIterableLike$Foreach.tryMerge(ParIterableLike.scala:972)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask$class.internal(Tasks.scala:190)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:514)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask$class.compute(Tasks.scala:162)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:514)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+20:58:23.235 [default-dispatcher-2][inferenceManager][OneForOneStrategy] ERROR sampling failed (see error log for more details)
+java.lang.RuntimeException: sampling failed (see error log for more details)
+	at org.deepdive.inference.Sampler$$anonfun$receive$1.applyOrElse(Sampler.scala:36) ~[classes/:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:467) ~[akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at org.deepdive.inference.Sampler.aroundReceive(Sampler.scala:17) ~[classes/:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:491) [akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:462) [akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:237) [akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:219) [akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:385) [akka-actor_2.10-2.3-M2.jar:2.3-M2]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
+20:58:23.237 [default-dispatcher-2][sampler][LocalActorRef] INFO  Message [akka.actor.PoisonPill$] from Actor[akka://deepdive/user/inferenceManager#1096807644] to Actor[akka://deepdive/user/inferenceManager/sampler#-1395375432] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+20:58:23.238 [default-dispatcher-14][inferenceManager][InferenceManager$PostgresInferenceManager] INFO  Starting
+20:58:23.240 [default-dispatcher-2][factorGraphBuilder][FactorGraphBuilder$PostgresFactorGraphBuilder] INFO  Starting
+20:58:30.381 [default-dispatcher-14][taskManager][TaskManager] INFO  Memory usage: 231/941MB (max: 941MB)
+

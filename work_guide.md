@@ -5,7 +5,7 @@ PROJECT WORK FLOW
 #######################
 # WORK PLAN
 
-1. Get positive examples (done), unknown examples (done), and negative examples (not done)
+1. Get positive examples (done), unknown examples (done), and negative examples (done?)
 
 2. Create table with all id, all text, and is_scholarship(boolean)
 
@@ -62,14 +62,21 @@ psql -d isDB -c "CREATE SCHEMA public;"
 # Load both data sets
 psql -d isDB -c "CREATE TABLE scholarships( id bigserial primary key, text text);"
 psql -d isDB -c "CREATE TABLE websites( id bigserial primary key, text text);"
+psql -d isDB -c "CREATE TABLE financial_aid( id bigserial primary key, text text);"
 
 psql -d isDB -c "COPY scholarships FROM STDIN CSV;" < data/scholarships.csv
 psql -d isDB -c "COPY websites FROM STDIN CSV;" < data/link_to.csv
+psql -d isDB -c "COPY financial_aid FROM STDIN CSV;" < data/financial_aid.csv
 
 psql -d isDB -c "ALTER TABLE scholarships ADD is_scholarship boolean"
 psql -d isDB -c "UPDATE scholarships SET is_scholarship = TRUE"
+
+psql -d isDB -c "ALTER TABLE financial_aid ADD is_scholarship boolean"
+psql -d isDB -c "UPDATE financial_aid SET is_scholarship = FALSE"
+
 psql -d isDB -c "ALTER TABLE websites ADD is_scholarship boolean"
 psql -d isDB -c "INSERT INTO scholarships SELECT * FROM websites;" 
+psql -d isDB -c "INSERT INTO scholarships SELECT * FROM financial_aid;"
 
 
 #####################
@@ -174,7 +181,16 @@ inference.factors {
   f_is_schol_features.function: "IsTrue(scholarships.is_scholarship)"
   f_is_schol_features.weight: "?(feature)"
 }
+schema.variables {
+    scholarships.is_scholarship: Boolean
+  }
 
+  pipeline.pipelines.nonlp: ["ext_schol", "f_is_schol_features"]
+
+#############################################
+## SAMPLER
+calibration.holdout_fraction: 0.20
+sampler.sampler_args: "-l 125 -s 1 -i 200 --alpha 0.001"
 
 ## Haven't tested this
 ALTER TABLE web_sentences ADD COLUMN id_orig numeric;

@@ -16,3 +16,6 @@ and other groups. The html is saved.
 ## html_to_csv
 This uses BeautifulSoup and some manual text processing algorithms to extract meaningful text
 from the saved html files, then exports them to a .csv file, for future use with Deepdive.
+
+#scrape_google_search.txt
+a simple script using the xgoogle library to scrape the links from a google search results page
