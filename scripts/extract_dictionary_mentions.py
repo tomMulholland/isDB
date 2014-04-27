@@ -22,6 +22,7 @@ proj_dir = "/home/tom/deepdive/app/isDB"
 # Job function
 def find_mentions(objects, dictionary, name_dict, stemmer):
     word_range = 5
+    w_arnd = "words_around="
     json_results = []
     for text_obj in objects:
         try:
@@ -55,11 +56,11 @@ def find_mentions(objects, dictionary, name_dict, stemmer):
                     five_after = word_index + word_range
                 else:
                     five_after = len(text) - 1
-                list_occur.append(' '.join(
+                list_occur.append(w_arnd + ' '.join(
                                 text[five_before:five_after + 1]))
-                list_occur.append(' '.join(
+                list_occur.append(w_arnd + ' '.join(
                                 text[word_index:five_after + 1]))
-                list_occur.append(' '.join(
+                list_occur.append(w_arnd + ' '.join(
                                 text[five_before:word_index + 1]))
                 for name in name_dict:
                     if (name in text[five_before:word_index + 1]):

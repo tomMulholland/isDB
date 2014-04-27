@@ -63,10 +63,12 @@ psql -d isDB -c "CREATE SCHEMA public;"
 psql -d isDB -c "CREATE TABLE scholarships( id bigserial primary key, text text);"
 psql -d isDB -c "CREATE TABLE websites( id bigserial primary key, text text);"
 psql -d isDB -c "CREATE TABLE financial_aid( id bigserial primary key, text text);"
+psql -d isDB -c "CREATE TABLE schol_int_study( id bigserial primary key, text text);"
 
 psql -d isDB -c "COPY scholarships FROM STDIN CSV;" < data/scholarships.csv
 psql -d isDB -c "COPY websites FROM STDIN CSV;" < data/link_to.csv
 psql -d isDB -c "COPY financial_aid FROM STDIN CSV;" < data/financial_aid.csv
+psql -d isDB -c "COPY schol_int_study FROM STDIN CSV;" < data/schol_int_study.csv
 
 psql -d isDB -c "ALTER TABLE scholarships ADD is_scholarship boolean"
 psql -d isDB -c "UPDATE scholarships SET is_scholarship = TRUE"
@@ -75,8 +77,10 @@ psql -d isDB -c "ALTER TABLE financial_aid ADD is_scholarship boolean"
 psql -d isDB -c "UPDATE financial_aid SET is_scholarship = FALSE"
 
 psql -d isDB -c "ALTER TABLE websites ADD is_scholarship boolean"
+psql -d isDB -c "ALTER TABLE schol_int_study ADD is_scholarship boolean"
 psql -d isDB -c "INSERT INTO scholarships SELECT * FROM websites;" 
 psql -d isDB -c "INSERT INTO scholarships SELECT * FROM financial_aid;"
+psql -d isDB -c "INSERT INTO scholarships SELECT * FROM schol_int_study;"
 
 
 #####################
